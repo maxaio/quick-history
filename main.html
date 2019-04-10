@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html charset="utf-8">
+
+<head>
+    <style>
+       #block{
+			width:1000px;
+			height:600px;
+		}
+		
+        #table tbody td{
+            border:1px solid;
+        }
+
+        #table thead tr td{
+            border:1px solid red;
+        }
+		
+		#table{
+			display:none;
+		}
+    </style>
+	<meta charset="utf-8"/>
+</head>
+
+<body>
+
+    <div id="block">
+        <input type="text" id="search_text" />
+        <input id="searchBtn" type="button" value="Search" />
+
+        <p>
+            TOTAL:
+            <span id="countDom"> 0 </span>
+            . LIMIT 100
+        </p>
+        <table id="table">
+            <thead>
+                <tr>
+                    <td>No:ID</td>
+                    <td>*</td>
+                    <td>Title</td>
+                    <td>URL</td>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
